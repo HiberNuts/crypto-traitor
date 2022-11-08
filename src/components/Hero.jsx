@@ -17,9 +17,9 @@ const Hero = ({ connectWallet, CurrentAccount, setCurrentAccount, noOfMint, setn
           <Count noOfMint={noOfMint} setnoOfMint={setnoOfMint} />
         </div>
         {/* <!-- Image --> */}
-        <div class="md:w-1/2">
+        {/* <div class="md:w-1/2">
           <img src={image} alt="img" />
-        </div>
+        </div> */}
       </div>
     </section>
   );
