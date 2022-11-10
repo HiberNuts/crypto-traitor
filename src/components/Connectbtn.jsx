@@ -5,7 +5,7 @@ const Connectbtn = ({ connectWallet, CurrentAccount, setCurrentAccount }) => {
     <button
       href="/"
       onClick={connectWallet}
-      className="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+      className="p-3 px-6 pt-2 text-white bg-darkBlue rounded-full baseline hover:bg-darkGrayishBlue"
     >
       {CurrentAccount != "" ? `${shortenAddress(CurrentAccount)}` : "Connect"}
     </button>

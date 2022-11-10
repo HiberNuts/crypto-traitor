@@ -1,6 +1,9 @@
 import Herobtn from "./Herobtn";
 import image from "../assets/Traitor3.png";
 import Count from "./Count";
+import Footer from "./Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faEthereum } from "@fortawesome/free-brands-svg-icons";
 const Hero = ({ connectWallet, CurrentAccount, setCurrentAccount, noOfMint, setnoOfMint, askContractToMintNft }) => {
   return (
     // <!-- Hero Section -->
@@ -10,7 +13,9 @@ const Hero = ({ connectWallet, CurrentAccount, setCurrentAccount, noOfMint, setn
         {/* <!-- Left item --> */}
         <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
           <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Bored & Better Azurians</h1>
-          <p class="max-w-sm text-center  md:text-left">We got bored and created a better for arts for Azurbala.</p>
+          <p class="max-w-sm text-center  md:text-left font-bold">
+            You are about to mint your Azurian. Choose the quantity you want to mint then Proceed. Welcome to Azurland.
+          </p>
           <div class="flex justify-center md:justify-start">
             <Herobtn askContractToMintNft={askContractToMintNft} />
           </div>
@@ -21,6 +26,8 @@ const Hero = ({ connectWallet, CurrentAccount, setCurrentAccount, noOfMint, setn
           <img src={image} alt="img" />
         </div> */}
       </div>
+
+      
     </section>
   );
 };

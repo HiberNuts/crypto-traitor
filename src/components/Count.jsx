@@ -21,7 +21,7 @@ function IncDecCounter({ noOfMint, setnoOfMint }) {
       <div class="input-group">
         <div class="input-group-prepend">
           <button
-            class="p-3 px-6 pt-2 text-white bg-brightRed  baseline hover:bg-brightRedLight"
+            class="p-3 px-6 pt-2 text-white btn-grad  baseline hover:bg-darkGrayishBlue"
             type="button"
             onClick={decNum}
           >
@@ -31,7 +31,7 @@ function IncDecCounter({ noOfMint, setnoOfMint }) {
         <input type="text" class="form-control" value={noOfMint} onChange={handleChange} />
         <div class="input-group-prepend">
           <button
-            class="p-3 px-6 pt-2 text-white bg-brightRed  baseline hover:bg-brightRedLight"
+            class="p-3 px-6 pt-2 text-white btn-grad  baseline hover:bg-darkGrayishBlue"
             type="button"
             onClick={incNum}
           >
